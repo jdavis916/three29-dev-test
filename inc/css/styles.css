@@ -48,18 +48,11 @@ table {
 }
 
 
-.txtCenter{
-	text-align: center;
-}
-.txtHide{
-	display: none;
-}
-.divCenter{
-	display: table;
-	margin: 0 auto;
-}
-
 /* Custom Styles*/
+
+.txtHide{
+    display: none;
+}
 
 .divItem{
     height: 25vh;
@@ -103,6 +96,14 @@ table {
 .divItem.toggleOn{
     width: 100%;
 }
+
+.toggleOn.initToggle{
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
 
 /*Responsive*/
 

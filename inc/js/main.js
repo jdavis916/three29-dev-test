@@ -1,9 +1,9 @@
 (function($) {
+        getDivStates(); //Get div info from cookie
 
 	$(document).ready(function() {
 
 		homePage();
-		getDivStates(); //Get div info from cookie
 
 		function homePage() {
 			var i = 0,
@@ -61,10 +61,11 @@
             
                 for(; i < 5; ++i){
                     if(divData[i-1] === "1"){
-                        $('#div' + i).addClass('toggleOn');
+                        $('#div' + i).addClass('initToggle toggleOn');
                     }
                 }
-                
+                $('#homeWrapper > div').removeClass('initToggle');
+                $('#homeWrapper').removeClass('txtHide');
             },
             error: function (err) {
                 console.log("This has thrown an error : " + err);
